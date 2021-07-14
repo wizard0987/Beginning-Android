@@ -1,0 +1,2 @@
+rootProject.name = "Study02EditText"
+include ':app'
