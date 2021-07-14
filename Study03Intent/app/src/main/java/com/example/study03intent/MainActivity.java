@@ -11,7 +11,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     private Button btn_move;
-    private EditText et_text;
+    private EditText et_test;
     private String str;
 
     @Override
@@ -19,16 +19,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        et_text = findViewById(R.id.et_text);
-
+        et_test = findViewById(R.id.et_test);
         btn_move = findViewById(R.id.btn_move);
+
         btn_move.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                str = et_text.getText().toString();
+                str = et_test.getText().toString();
                 Intent intent = new Intent(MainActivity.this, SubActivity.class);
                 intent.putExtra("str", str);
-                startActivity(intent); // 엑티비티(=페이지) 이동
+                startActivity(intent); // 지정한 엑티비티(=페이지)로 이동
             }
         });
 

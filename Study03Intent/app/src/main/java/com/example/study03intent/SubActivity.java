@@ -19,6 +19,7 @@ public class SubActivity extends AppCompatActivity {
 
         Intent intent = getIntent(); // 어디선가 날라오는 Intent가 존재한다면 해당 객체에서 받는다
         String str = intent.getStringExtra("str");
+
         tv_sub.setText(str);
 
     }
