@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     private View drawerView;
+    private Button btn_open;
+    private Button btn_close;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +24,12 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
         drawerView = findViewById(R.id.drawer);
 
-        Button btn_open = findViewById(R.id.btn_open);
+        btn_open = findViewById(R.id.btn_open);
         btn_open.setOnClickListener(v -> {
             drawerLayout.openDrawer(drawerView);
         });
 
-        Button btn_close = findViewById(R.id.btn_close);
+        btn_close = findViewById(R.id.btn_close);
         btn_close.setOnClickListener(v -> {
             drawerLayout.closeDrawers();
         });
