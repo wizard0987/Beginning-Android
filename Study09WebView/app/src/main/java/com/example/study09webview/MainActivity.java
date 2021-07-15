@@ -11,7 +11,7 @@ import android.webkit.WebViewClient;
 public class MainActivity extends AppCompatActivity {
 
     private WebView webView;
-    String url = "https://www.naver.com";
+    String url = "https://www.google.com/ncr";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
