@@ -10,9 +10,7 @@ import androidx.annotation.Nullable;
 
 public class Fragment1 extends Fragment {
 
-    public Fragment1() {
-
-    }
+    public Fragment1() {}
 
     @Nullable
     @Override

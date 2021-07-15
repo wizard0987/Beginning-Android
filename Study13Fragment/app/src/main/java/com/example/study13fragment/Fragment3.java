@@ -10,14 +10,12 @@ import androidx.annotation.Nullable;
 
 public class Fragment3 extends Fragment {
 
-    public Fragment3() {
-
-    }
+    public Fragment3() {}
     
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
 //        return super.onCreateView(inflater, container, savedInstanceState);
-        return inflater.inflate(R.layout.fragment4, container, false);
+        return inflater.inflate(R.layout.fragment3, container, false);
     }
 }

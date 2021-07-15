@@ -27,21 +27,21 @@ public class MainActivity extends AppCompatActivity {
             transaction.commit(); // 저장 후 새로고침(?)
         });
 
-        btn1.setOnClickListener(v -> {
+        btn2.setOnClickListener(v -> {
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             Fragment2 fragment2 = new Fragment2();
             transaction.replace(R.id.frame, fragment2);
             transaction.commit(); // 저장 후 새로고침(?)
         });
 
-        btn1.setOnClickListener(v -> {
+        btn3.setOnClickListener(v -> {
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             Fragment3 fragment3 = new Fragment3();
             transaction.replace(R.id.frame, fragment3);
             transaction.commit(); // 저장 후 새로고침(?)
         });
 
-        btn1.setOnClickListener(v -> {
+        btn4.setOnClickListener(v -> {
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             Fragment4 fragment4 = new Fragment4();
             transaction.replace(R.id.frame, fragment4);
