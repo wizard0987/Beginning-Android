@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         long currentTime = System.currentTimeMillis();
         long gapTime     = currentTime - backBtnTime;
 
-        if((gapTime >= 0) && (gapTime <= 2000)) {
+        if((gapTime >= 0L) && (gapTime <= 2000L)) {
             super.onBackPressed();
         } else {
             backBtnTime = currentTime;
