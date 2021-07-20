@@ -1,0 +1,2 @@
+rootProject.name = "Study35ViewPager"
+include ':app'
